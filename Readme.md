@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
-* Студент: [Ваня Кириллов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2556705).
-* Наставник: `Неизвестно`.
+* Студент: [Иван Кириллов](https://up.htmlacademy.ru/htmlcss-individual/2/user/2556705).
+* Наставник: [Александр Румянцев](https://htmlacademy.ru/profile/id1521451).
+* Сайт [Мой проект Sedona](https://github.com/Ivan-Kirillov/2556705-sedona-2.git)
 
 ---
 
