@@ -163,7 +163,8 @@ max-width: 160px;
 box-sizing: border-box;
 word-wrap: break-word;
 display: inline-block;
-justify-content: center;
+text-decoration: none;
+text-align: center;
 }
 
 .navigation-icon{
@@ -638,7 +639,7 @@ display: flex;
 flex-wrap: wrap;
 padding: 45px 70px 30px;
 box-sizing: border-box;
-box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+box-shadow: 0 15px 15px rgba(0, 0, 0, 0.2);
 }
 
 .footer-social-list{
@@ -1717,6 +1718,8 @@ border-radius: 4px;
 box-sizing: border-box;
 margin-left: 2px;
 margin-top: 2px;
+border: none;
+background-color: #FFFFFF;
 }
 
 .bg-view-tile{
@@ -1732,6 +1735,8 @@ border-radius: 4px;
 box-sizing: border-box;
 margin-left: 2px;
 margin-top: 2px;
+border: none;
+background-color: #FFFFFF;
 }
 
 .bg-view-list{
@@ -1747,6 +1752,8 @@ border-radius: 4px;
 box-sizing: border-box;
 margin-left: 2px;
 margin-top: 2px;
+border: none;
+background-color: #FFFFFF;
 }
 
 .view-cards-current{
@@ -1904,6 +1911,26 @@ width: 300px;
 max-width: 140px;
 display: flex;
 flex-wrap: wrap;
+min-width: 140px;
+min-height: 37px;
+}
+
+.four-stars{
+background-image: url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg) ;
+background-repeat: no-repeat;
+background-position: 0 10px, 24px 10px, 48px 10px, 72px 10px;
+}
+
+.three-stars{
+  background-image: url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg) ;
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px, 48px 10px;
+}
+
+.two-stars{
+  background-image: url(../img/catalog-page/star.svg), url(../img/catalog-page/star.svg);
+  background-repeat: no-repeat;
+  background-position: 0 10px, 24px 10px;
 }
 
 .star{
