@@ -54,9 +54,9 @@
             <span class="visually-hidden">
               Записаться
             </span>
-            <button type="button" class="navigation-link-button-sign-up">
+            <a href="#" class="navigation-link-button-sign-up">
               Хочу сюда!
-            </button>
+            </a>
           </li>
         </ul>
       </nav>
@@ -220,21 +220,21 @@
               </option>
             </select>
             <div class="view-cards">
-              <a href="#" class="bg-view bg-view-cards view-cards-current">
+              <button type="button" href="#" class="bg-view bg-view-cards view-cards-current">
                 <span class="visually-hidden">
                   Показать в виде карточек
                 </span>
-              </a>
-              <a href="#" class="bg-view bg-view-tile">
+              </button>
+              <button type="button" href="#" class="bg-view bg-view-tile">
                 <span class="visually-hidden">
                   Показать в виде плиток
                 </span>
-              </a>
-              <a href="#" class="bg-view bg-view-list">
+              </button>
+              <button type="button" href="#" class="bg-view bg-view-list">
                 <span class="visually-hidden">
                   Показать в виде списка
                 </span>
-              </a>
+              </button>
             </div>
           </div>
           <ul class="hotel-list">
@@ -264,14 +264,9 @@
                 </button>
               </div>
               <div class="rating-container">
-                <div class="stars-container">
-                  <div class="star"></div>
-                  <div class="star"></div>
-                  <div class="star"></div>
-                  <div class="star"></div>
-                </div>
+                <div class="stars-container four-stars"></div>
                 <span class="visually-hidden">
-                  3 звезды
+                  4 звезды
                 </span>
                 <span class="hotel-card-rating">
                   Рейтинг: 8,5
@@ -304,12 +299,7 @@
                 </button>
               </div>
               <div class="rating-container">
-                <div class="stars-container">
-                  <div class="star"></div>
-                  <div class="star"></div>
-                  <div class="star"></div>
-                  <div class="star"></div>
-                </div>
+                <div class="stars-container four-stars"></div>
                 <span class="visually-hidden">
                   4 звезды
                 </span>
@@ -344,11 +334,7 @@
                 </button>
               </div>
               <div class="rating-container">
-                <div class="stars-container">
-                  <div class="star"></div>
-                  <div class="star"></div>
-                  <div class="star"></div>
-                </div>
+                <div class="stars-container three-stars"></div>
                 <span class="visually-hidden">
                   3 звезды
                 </span>
@@ -383,10 +369,7 @@
                 </button>
               </div>
               <div class="rating-container">
-                <div class="stars-container">
-                  <div class="star"></div>
-                  <div class="star"></div>
-                </div>
+                <div class="stars-container two-stars"></div>
                 <span class="visually-hidden">
                   2 звезды
                 </span>
@@ -398,32 +381,32 @@
           </ul>
           <ul class="paginator-list">
             <li class="paginator-item">
-              <a href="#" class="paginator-link-current">
+              <a href="#" class="paginator-link-current" aria-label="pagination-number-one">
                 1
               </a>
             </li>
             <li class="paginator-item">
-              <a href="#" class="paginator-link ">
+              <a href="#" class="paginator-link" aria-label="pagination-number-two">
                 2
               </a>
             </li>
             <li class="paginator-item">
-              <a href="#" class="paginator-link ">
+              <a href="#" class="paginator-link" aria-label="pagination-number-three">
                 3
               </a>
             </li>
             <li class="paginator-item">
-              <a href="#" class="paginator-link ">
+              <a href="#" class="paginator-link" aria-label="pagination-number-four">
                 4
               </a>
             </li>
             <li class="paginator-item">
-              <a class="paginator-link-ellipsis">
+              <a class="paginator-link-ellipsis" aria-label="pagination-ellipsis">
                 ...
               </a>
             </li>
             <li class="paginator-item">
-              <a href="#" class="paginator-link">
+              <a href="#" class="paginator-link" aria-label="pagination-number-ten">
                 10
               </a>
             </li>
@@ -482,7 +465,7 @@
         </li>
       </ul>
       <address class="footer-phone-container">
-        <a class="footer-phone" href="tel:+78128121212">
+        <a class="footer-phone" href="tel:+78128121212" aria-label="telephone">
           +7 (812) 812-12-12
         </a>
       </address>
