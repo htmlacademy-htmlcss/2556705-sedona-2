@@ -11,7 +11,7 @@
     <header class="page-header">
       <nav class="navigation">
         <!-- ! Left-items -->
-        <a href="index.html" aria-current="page" class="navigation-logo">
+        <a href="#" aria-current="page" class="navigation-logo">
           <img class="sedona-logo" src="img/logo-icon/logo-sedona.svg" width="140" height="70" alt="Логотип Sedona">
         </a>
         <ul class="navigation-list">
@@ -90,16 +90,15 @@
                 Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
               </p>
             </li>
-            <li class="advantages-item-color advantages-item-text">
-              <h3 class="advantages-title advantages-title-underline">
-                Настоящий <br> городок
-              </h3>
-              <p class="advantages-description advantages-description-overline">
-                Седона — не аттракцион для <br> туристов, там течёт своя <br> жизнь
-              </p>
-            </li>
-            <!-- ! Img-city -->
-            <li class="advantages-item advantages-item-image">
+            <li class="advantages-item-color advantages-item-text advantages-item-wider">
+              <div class="advantages-item-blue">
+                <h3 class="advantages-title advantages-title-underline">
+                  <span class="advantages-title-real">Настоящий</span> <br> городок
+                </h3>
+                <p class="advantages-description advantages-description-overline">
+                  Седона — не аттракцион для <br> туристов, там течёт своя <br> жизнь
+                </p>
+              </div>
               <img class="advantages-image" src="img/main-page/city-sedona.jpg" width="800" height="385"
               alt="Город Седона">
             </li>
@@ -128,16 +127,16 @@
               </p>
             </li>
             <!-- ! Img-mountain-->
-            <li class="advantages-item advantages-item-image">
+            <li class="advantages-item-color advantages-item-text advantages-item-wider">
               <img src="img/main-page/mountain.jpg" width="800" height="385" alt="Горы Седоны">
-            </li>
-            <li class="advantages-item-color advantages-item-text">
-              <h3 class="advantages-title advantages-title-underline">
-                Там есть <br> мост дьявола
-              </h3>
-              <p class="advantages-description advantages-description-overline">
-                Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется
-              </p>
+              <div class="advantages-item-blue ">
+                <h3 class="advantages-title advantages-title-underline">
+                  Там есть <br> мост дьявола
+                </h3>
+                <p class="advantages-description advantages-description-overline">
+                  Да, по нему можно пройти! <br> Если вы осмелитесь, <br> разумеется
+                </p>
+              </div>
             </li>
             <li class="advantages-item advantages-item-big">
               <h3 class="title-big title-big-last">
@@ -187,7 +186,7 @@
             <p class="description-big ">
               Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне
             </p>
-            <button class="button-search" type="button">
+            <button type="button" class="button-search">
               Поиск гостиницы в Седоне
             </button>
           </div>
@@ -201,8 +200,9 @@
               Только полезная информация и никакого спама, <br> честное бойскаутское!
             </p>
             <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-              <input class="input-email" type="email" placeholder="Ваш e-mail" name="user-email">
-              <button class="button-subscribe" type="submit">
+              <label class="visually-hidden" for="newsletter-email">Email</label>
+              <input class="input-email" type="email" placeholder="Ваш e-mail" name="user-email" id="newsletter-email" required>
+              <button type="submit" class="button-subscribe">
                 Подписаться
               </button>
             </form>
@@ -260,7 +260,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button type="button" class="modal-close-button">
           <span class="visually-hidden">
             Закрыть
           </span>
@@ -274,13 +274,13 @@
               <label class="label-search-hotels" for="search-date-in">
                 Дата Заезда:
               </label>
-              <input class="search-form-field search-form-field-date" type="text" id="search-date-in" name="search-date-arrival" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="search-form-field search-form-field-date" type="text" id="search-date-in" name="search-date-arrival" placeholder="Укажите дату" value="27 апреля 2020" required>
             </div>
             <div class="field-group date-out">
               <label class="label-search-hotels label-date-out" for="search-date-out">
                 Дата Выезда:
               </label>
-              <input class="search-form-field search-form-field-date" type="text" id="search-date-out" name="search-date-exit" placeholder="Укажите дату" value="1 сентября 2023">
+              <input class="search-form-field search-form-field-date" type="text" id="search-date-out" name="search-date-exit" placeholder="Укажите дату" value="1 сентября 2023" required>
             </div>
             <div class="field-group search-form-numbers">
               <label class="label-search-hotels label-num-adults" for="search-num-adults">
@@ -289,7 +289,7 @@
               <div class="input-container">
                 <button type="button" class="button-minus"></button>
                 <input class="search-form-field search-num" type="text" id="search-num-adults"
-                name="num-adults" value="2">
+                name="num-adults" value="2" required>
                 <button type="button" class="button-plus"></button>
               </div>
               <label class="label-search-hotels label-num-kids" for="search-num-kids">
@@ -302,11 +302,11 @@
               </div>
               <div class="input-container num-kids-container">
                 <button type="button" class="button-minus"></button>
-                <input class="search-form-field search-num" type="text" id="search-num-kids" name="num-kids" value="2">
+                <input class="search-form-field search-num" type="text" id="search-num-kids" name="num-kids" value="2" required>
                 <button type="button" class="button-kids-plus"></button>
               </div>
             </div>
-            <button class="button search-form-button" type="submit">
+            <button type="submit" class="button search-form-button">
               Найти
             </button>
           </form>
