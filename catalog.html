@@ -78,7 +78,7 @@
                 </a>
               </li>
               <li class="breadcrumbs-item breadcrumbs-item-arrow">
-                <a href="catalog.html" class="breadcrumbs-link breadcrumbs-link-hotels">
+                <a href="#" class="breadcrumbs-link breadcrumbs-link-hotels">
                   Гостиницы
                 </a>
               </li>
@@ -168,18 +168,20 @@
                 </h3>
               </legend>
               <div class="input-price-container">
-                <input class="input-price " type="number" value="0">
-                <input class="input-price input-price-greater" type="number" value="9000">
+                <label for="start-price" class="visually-hidden"></label>
+                <input class="input-price" type="number" value="0" id="start-price" required>
+                <label for="end-price" class="visually-hidden"></label>
+                <input class="input-price input-price-greater" type="number" value="9000" id="end-price" required>
               </div>
               <div class="range">
                 <div class="range-scale">
                   <div class="range-bar" style="width: 227px">
-                    <button class="range-toggle toggle-min" type="button">
+                    <button type="button" class="range-toggle toggle-min">
                       <span class="visually-hidden">
                         Изменить минимальную цену
                       </span>
                     </button>
-                    <button class="range-toggle toggle-max" type="button">
+                    <button type="button" class="range-toggle toggle-max">
                       <span class="visually-hidden">
                         Изменить максимальную цену
                       </span>
@@ -220,17 +222,17 @@
               </option>
             </select>
             <div class="view-cards">
-              <button type="button" href="#" class="bg-view bg-view-cards view-cards-current">
+              <button type="button" class="bg-view bg-view-cards view-cards-current">
                 <span class="visually-hidden">
                   Показать в виде карточек
                 </span>
               </button>
-              <button type="button" href="#" class="bg-view bg-view-tile">
+              <button type="button" class="bg-view bg-view-tile">
                 <span class="visually-hidden">
                   Показать в виде плиток
                 </span>
               </button>
-              <button type="button" href="#" class="bg-view bg-view-list">
+              <button type="button" class="bg-view bg-view-list">
                 <span class="visually-hidden">
                   Показать в виде списка
                 </span>
@@ -259,7 +261,7 @@
                 <a href="#" class="hotel-card-button hotel-card-detail">
                   Подробнее
                 </a>
-                <button class="hotel-card-button hotel-card-favourite" type="button">
+                <button type="button" class="hotel-card-button hotel-card-favourite">
                   В избранное
                 </button>
               </div>
@@ -294,7 +296,7 @@
                 <a href="#" class="hotel-card-button hotel-card-detail">
                   Подробнее
                 </a>
-                <button class="hotel-card-button hotel-card-favourite hotel-card-favourite-changed" type="button">
+                <button type="button" class="hotel-card-button hotel-card-favourite hotel-card-favourite-changed">
                   В избранном
                 </button>
               </div>
@@ -329,7 +331,7 @@
                 <a href="#" class="hotel-card-button hotel-card-detail">
                   Подробнее
                 </a>
-                <button class="hotel-card-button hotel-card-favourite" type="button">
+                <button type="button" class="hotel-card-button hotel-card-favourite">
                   В избранное
                 </button>
               </div>
@@ -364,7 +366,7 @@
                 <a href="#" class=" hotel-card-button hotel-card-detail">
                   Подробнее
                 </a>
-                <button class="hotel-card-button hotel-card-favourite" type="button">
+                <button type="button" class="hotel-card-button hotel-card-favourite">
                   В избранное
                 </button>
               </div>
@@ -420,8 +422,9 @@
             Только полезная информация и никакого спама, <br> честное бойскаутское!
           </p>
           <form action="https://echo.htmlacademy.ru/" method="post" class="subscribe-form">
-            <input class="input-email" type="email" placeholder="Ваш e-mail" name="user-email">
-            <button class="button-subscribe" type="submit">
+            <label class="visually-hidden" for="newsletter-email">Email</label>
+            <input class="input-email" type="email" placeholder="Ваш e-mail" name="user-email" id="newsletter-email" required>
+            <button type="submit" class="button-subscribe">
               Подписаться
             </button>
           </form>
@@ -479,7 +482,7 @@
     </footer>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button">
+        <button type="button" class="modal-close-button">
           <span class="visually-hidden">
             Закрыть
           </span>
@@ -493,13 +496,13 @@
               <label class="label-search-hotels" for="search-date-in">
                 Дата Заезда:
               </label>
-              <input class="search-form-field search-form-field-date" type="text" id="search-date-in" name="search-date-arrival" placeholder="Укажите дату" value="27 апреля 2020">
+              <input class="search-form-field search-form-field-date" type="text" id="search-date-in" name="search-date-arrival" placeholder="Укажите дату" value="27 апреля 2020" required>
             </div>
             <div class="field-group date-out">
               <label class="label-search-hotels label-date-out" for="search-date-out">
                 Дата Выезда:
               </label>
-              <input class="search-form-field search-form-field-date" type="text" id="search-date-out" name="search-date-exit" placeholder="Укажите дату" value="1 сентября 2023">
+              <input class="search-form-field search-form-field-date" type="text" id="search-date-out" name="search-date-exit" placeholder="Укажите дату" value="1 сентября 2023" required>
             </div>
             <div class="field-group search-form-numbers">
               <label class="label-search-hotels label-num-adults" for="search-num-adults">
@@ -508,7 +511,7 @@
               <div class="input-container">
                 <button type="button" class="button-minus"></button>
                 <input class="search-form-field search-num" type="text" id="search-num-adults"
-                name="num-adults" value="2">
+                name="num-adults" value="2" required>
                 <button type="button" class="button-plus"></button>
               </div>
               <label class="label-search-hotels label-num-kids" for="search-num-kids">
@@ -521,11 +524,11 @@
               </div>
               <div class="input-container num-kids-container">
                 <button type="button" class="button-minus"></button>
-                <input class="search-form-field search-num" type="text" id="search-num-kids" name="num-kids" value="2">
+                <input class="search-form-field search-num" type="text" id="search-num-kids" name="num-kids" value="2" required>
                 <button type="button" class="button-kids-plus"></button>
               </div>
             </div>
-            <button class="button search-form-button" type="submit">
+            <button type="submit" class="button search-form-button">
               Найти
             </button>
           </form>
