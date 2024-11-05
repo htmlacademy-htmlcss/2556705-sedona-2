@@ -1,17 +1,17 @@
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/ptsans-400.woff2") format("woff2");
-  font-display: swap;
+@font-face{
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 400;
+src: url("../fonts/ptsans-400.woff2") format("woff2");
+font-display: swap;
 }
 
-@font-face {
-  font-family: "PT Sans";
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/ptsans-700.woff2") format("woff2");
-  font-display: swap;
+@font-face{
+font-family: "PT Sans";
+font-style: normal;
+font-weight: 700;
+src: url("../fonts/ptsans-700.woff2") format("woff2");
+font-display: swap;
 }
 
 /* ! General-parameters */
@@ -774,17 +774,17 @@ fill: #83B3D3;
 }
 
 .footer-social-vk{
-padding: 13px 11.7px;
+padding: 12px 11.7px;
 box-sizing: border-box;
 }
 
 .footer-social-telegram{
-padding: 12px 14.7px;
+padding: 11px 14.7px;
 box-sizing: border-box;
 }
 
 .footer-social-youtube{
-padding: 11.5px 12.7px;
+padding: 11px 12.7px;
 box-sizing: border-box;
 }
 
@@ -825,6 +825,7 @@ display: inline-block;
 max-width: 720px;
 min-width: 332px;
 padding-left: 2px;
+margin-top: -1px;
 }
 
 .footer-phone:hover{
@@ -852,7 +853,7 @@ margin-bottom: auto;
 
 .html-academy-icon{
 fill: #000;
-margin-top: 2px;
+margin-top: 1px;
 }
 
 .html-academy-icon:hover{
@@ -1804,11 +1805,11 @@ max-width: 292px;
 }
 
 .select-control:hover{
-border:2px solid #68A2CA;
+outline:2px solid #68A2CA;
 }
 
 .select-control:focus{
-border:2px solid #68A2CA;
+outline:2px solid #68A2CA;
 }
 
 .select-control:disabled{
@@ -1929,6 +1930,7 @@ width: 300px;
 height: 212px;
 margin-left: -1px;
 margin-top: 2px;
+margin-bottom: 1px;
 }
 
 .hotel-card-link{
@@ -1943,14 +1945,11 @@ margin-bottom: 0;
 }
 
 .hotel-card-title{
-margin: 17px 0 17px 0;
+margin: 16px 0 15px 0;
 font-weight: 700;
 font-size: 24px;
 line-height: 28px;
 color: #000000;
-margin-top: 16px;
-margin-bottom: 16px;
-margin-left: 0;
 max-width: 300px;
 word-wrap: break-word;
 }
